@@ -41,7 +41,7 @@ body {
   border-radius: 5px;
 }
 
-.lboard_wrap .lboard_item {
+.lboard_wrap .lboard_mem {
   padding: 25px;
 }
 
@@ -76,7 +76,7 @@ body {
 }
 
 .lboard_wrap .lboard_mem .name_bar p {
-  color: #3a3d51;
+  color: #f709cf;
 }
 
 .lboard_wrap .lboard_mem .name_bar p span {

@@ -1,33 +1,20 @@
 let gamesInfo = [
   {
+    name: "Cobrinha",
+    description: "Jogo exemplo 1",
+    image: "snake",
+  },
+  {
+    name: "Memoria",
+    description: "Jogo exemplo 2",
+    image: "memoria",
+    link: "https://game-awake.github.io/Memorizando-e-Aprendendo/",
+    project: "https://github.com/Game-Awake/Memorizando-e-Aprendendo",
+  },
+  {
     name: "Game 1",
     description: "Jogo exemplo 1",
     image: "snake",
-    link: "http://google.com.br",
-  },
-  {
-    name: "Game 2",
-    description: "Jogo exemplo 2",
-    image: "snake",
-    link: "http://google.com.br",
-  },
-  {
-    name: "Game 1",
-    description: "Jogo exemplo 1",
-    image: "snake",
-    link: "http://google.com.br",
-  },
-  {
-    name: "Game 2",
-    description: "Jogo exemplo 2",
-    image: "snake",
-    link: "http://google.com.br",
-  },
-  {
-    name: "Game 2",
-    description: "Jogo exemplo 2",
-    image: "snake",
-    link: "http://google.com.br",
   },
 ];
 
@@ -59,6 +46,24 @@ function createGamePanel(item) {
   panel.appendChild(name);
   panel.appendChild(description);
   panel.appendChild(imageDiv);
+
+  if (item.link) {
+    let linkDiv = document.createElement("div");
+    let link = document.createElement("a");
+    link.href = item.link;
+    link.innerText = "Jogar";
+    linkDiv.appendChild(link);
+    panel.appendChild(linkDiv);
+  }
+
+  if (item.project) {
+    let projectDiv = document.createElement("div");
+    let project = document.createElement("a");
+    project.href = item.project;
+    project.innerText = "Ver o código";
+    projectDiv.appendChild(project);
+    panel.appendChild(projectDiv);
+  }
 
   return panel;
 }

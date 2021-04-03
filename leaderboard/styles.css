@@ -61,10 +61,6 @@ body {
   border-bottom: 0;
 }
 
-.lboard_wrap .lboard_mem .img {
-  width: 10px;
-}
-
 .lboard_wrap .lboard_mem img {
   display: block;
   width: 10%;

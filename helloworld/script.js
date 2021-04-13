@@ -1,27 +1,24 @@
+//condições
+let paes_comprados = 1;
+let devocomprar = true;
+
+devocomprar = paes_comprados < 3;
+console.log(devocomprar);
+
+// items a comprar
 let pao = 1;
 let leite = 2;
 let abacate = 1;
 
-console.log(pao);
-console.log(leite);
-console.log(abacate);
+let itemsdacompra = leite + abacate;
 
-let itemsdacompra = pao + leite + abacate;
-
+console.log("----Antes do condicional---");
 console.log(itemsdacompra);
 
-let teste = true; // booleano
-
-console.log(teste);
-
-let listadecompras = "Lista bonita"; //string
-
-console.log(listadecompras);
-
-//DESAFIO
-
-//declarar as variaveis com preço de cada coisa
-
-// calcular quanto custa essa compra;
-
-//fazer a conta do preço total
+if (devocomprar) {
+  itemsdacompra = itemsdacompra + pao;
+  console.log("Compramos pão");
+  console.log("Agora temos " + itemsdacompra + " items");
+} else {
+  console.log("Já tinha pão");
+}
